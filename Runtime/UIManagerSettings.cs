@@ -22,6 +22,21 @@ public class UIManagerSettings : ScriptableObject
     private static UIManagerSettings Load()
     {
         var settings =  Resources.Load<UIManagerSettings>("UIManagerSettings");
+        #if UNITY_EDITOR
+        if(settings ==null)
+        {
+            var resourcePath = Application.dataPath +"/Resources";
+            if(!Directory.Exists(resourcePath))
+            {
+                AssetDatabase.CreateFolder("Assets","Resources");
+                AssetDatabase.SaveAssets();
+            }
+            settings = ScriptableObject.CreateInstance<UIManagerSettings>();
+            AssetDatabase.CreateAsset(settings, "Assets/Resources/UIManagerSettings.asset");
+            AssetDatabase.SaveAssets();
+
+        }
+        #endif
         Debug.Assert(settings!=null,"Could not load settings");
         return settings;
     }
