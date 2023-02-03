@@ -1,8 +1,8 @@
 {
-    "name": "EditorAssembly",
+    "name": "com.attar033.dotween.editor",
     "rootNamespace": "",
     "references": [
-        "GUID:d61f220d3f1304d98b3878c64b1397f2"
+        "com.attar033.uimanager.runtime"
     ],
     "includePlatforms": [
         "Editor"

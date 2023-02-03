@@ -1,6 +1,5 @@
 // Author: Daniele Giardini - http://www.demigiant.com
 // Created: 2015/03/12 16:03
-
 using System;
 using System.Collections.Generic;
 using System.IO;

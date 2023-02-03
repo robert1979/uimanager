@@ -1,12 +1,8 @@
 {
-    "name": "EditorAssembly",
+    "name": "com.attar033.uigradient.runtime",
     "rootNamespace": "",
-    "references": [
-        "GUID:d61f220d3f1304d98b3878c64b1397f2"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "references": [],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
